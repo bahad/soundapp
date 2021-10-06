@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Glass_Break",
+        "path": "sounds/Minecraft_Glass_Break.mp3",
+        "category": "Gaming"
+    },
+    {
+        "name": "Tnt Explosion",
+        "path": "sounds/Minecraft_Tnt_Explosion.mp3",
+        "category": "Gaming"
+    }
+]
