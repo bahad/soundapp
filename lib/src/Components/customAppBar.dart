@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:soundapp/src/Components/constants.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final String? title;
+  final Widget? title;
   final bool? centerTitle;
   final bool? automaticallyImplyLeading;
   final Widget? leading;
@@ -19,20 +18,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return PreferredSize(
       preferredSize: preferredSize,
       child: AppBar(
-          backgroundColor: primaryColor,
+          backgroundColor: Color(0xFFFF416C),
           iconTheme: IconThemeData(color: Colors.white),
           actionsIconTheme: IconThemeData(color: Colors.white),
           centerTitle: centerTitle,
           leading: leading,
           automaticallyImplyLeading: automaticallyImplyLeading!,
-          title: Text(
+          title: title!,
+          /*title: Text(
             title!,
             style: const TextStyle(
                 fontSize: 18.0,
                 fontFamily: 'OxygenBold',
                 //fontWeight: FontWeight.w600,
                 color: Colors.white),
-          ),
+          ), */
           actions: actions),
     );
   }
