@@ -483,7 +483,7 @@
         "id": "81",
         "name": "Enemy Spotted",
         "path": "sounds/enemyspotted.mp3",
-        "category": "Gaming"
+        "category": "Gaming, Oyun"
     },
     {
         "id": "82",
@@ -495,13 +495,13 @@
         "id": "83",
         "name": "Minecraft Eating",
         "path": "sounds/minecraft_eating.mp3",
-        "category": "Gaming, Minecraft"
+        "category": "Gaming, Minecraft, Oyun"
     },
     {
         "id": "84",
         "name": "Mario Coin",
         "path": "sounds/mario_coin.mp3",
-        "category": "Gaming, Mario"
+        "category": "Gaming, Mario, Oyun"
     },
     {
         "id": "85",
@@ -627,31 +627,31 @@
         "id": "105",
         "name": "China",
         "path": "sounds/china.mp3",
-        "category": "Politic, Trump"
+        "category": "Politic, Trump, Siyaset"
     },
     {
         "id": "106",
         "name": "You're fired",
         "path": "sounds/yourefired.mp3",
-        "category": "Politic, Trump"
+        "category": "Politic, Trump, Siyaset"
     },
     {
         "id": "107",
         "name": "Fake News",
         "path": "sounds/fakenews.mp3",
-        "category": "Politic, Trump"
+        "category": "Politic, Trump, Siyaset"
     },
     {
         "id": "108",
         "name": "Chinese Virus",
         "path": "sounds/chinesevirus.mp3",
-        "category": "Politic, Trump"
+        "category": "Politic, Trump, Siyaset"
     },
     {
         "id": "109",
         "name": "Obamna",
         "path": "sounds/obamna.mp3",
-        "category": "Politic, Trump"
+        "category": "Politic, Trump, Siyaset"
     },
     {
         "id": "110",
@@ -669,7 +669,7 @@
         "id": "112",
         "name": "Soda",
         "path": "sounds/soda.mp3",
-        "category": "Politic, Biden"
+        "category": "Politic, Biden, Siyaset"
     },
     {
         "id": "113",
@@ -687,31 +687,31 @@
         "id": "115",
         "name": "Shotgun",
         "path": "sounds/shotgun.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "116",
         "name": "Gun Reload",
         "path": "sounds/gun_reload.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "117",
         "name": "Gunshot",
         "path": "sounds/gunshot.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "118",
         "name": "Elephant",
         "path": "sounds/elephant.mp3",
-        "category": "Animal"
+        "category": "Animal, Hayvan"
     },
     {
         "id": "119",
         "name": "Dog Barking",
         "path": "sounds/dog_barking.mp3",
-        "category": "Animal"
+        "category": "Animal, Hayvan"
     },
     {
         "id": "120",
@@ -729,7 +729,7 @@
         "id": "122",
         "name": "Rifle",
         "path": "sounds/rifle.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "123",
@@ -741,19 +741,19 @@
         "id": "124",
         "name": "Stun Grenade",
         "path": "sounds/stun_grenade.mp3",
-        "category": "Cod, Gaming"
+        "category": "Cod, Gaming, Oyun"
     },
     {
         "id": "125",
         "name": "Enemy Patrol",
         "path": "sounds/enemy_patrol.mp3",
-        "category": "Cod, Gaming"
+        "category": "Cod, Gaming, Oyun"
     },
     {
         "id": "126",
         "name": "Tango Down",
         "path": "sounds/tango_down.mp3",
-        "category": "Cod, Gaming"
+        "category": "Cod, Gaming, Oyun"
     },
     {
         "id": "127",
@@ -765,30 +765,126 @@
         "id": "128",
         "name": "Ak 47",
         "path": "sounds/ak47.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "129",
         "name": "Time Bomb",
         "path": "sounds/time_bomb.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "130",
         "name": "Explode",
         "path": "sounds/explode.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "131",
         "name": "C4 Explode",
         "path": "sounds/c4_explode.mp3",
-        "category": "Gun"
+        "category": "Gun, Silah"
     },
     {
         "id": "132",
         "name": "Fire In the Hole",
         "path": "sounds/fireinthehole.mp3",
-        "category": "Gaming"
+        "category": "Gaming, Oyun"
+    },
+    {
+        "id": "133",
+        "name": "Police Siren",
+        "path": "sounds/police_siren.mp3",
+        "category": ""
+    },
+    {
+        "id": "134",
+        "name": "Danger Coming",
+        "path": "sounds/danger_coming.mp3",
+        "category": ""
+    },
+    {
+        "id": "135",
+        "name": "Squid Game",
+        "path": "sounds/squid_game.mp3",
+        "category": ""
+    },
+    {
+        "id": "136",
+        "name": "Hahaha",
+        "path": "sounds/hahaha.mp3",
+        "category": ""
+    },
+    {
+        "id": "137",
+        "name": "Nope",
+        "path": "sounds/nope.mp3",
+        "category": ""
+    },
+    {
+        "id": "138",
+        "name": "Fast Car",
+        "path": "sounds/fastcar.mp3",
+        "category": "Car, Araba"
+    },
+    {
+        "id": "139",
+        "name": "F1",
+        "path": "sounds/f1.mp3",
+        "category": "Car, Araba"
+    },
+    {
+        "id": "140",
+        "name": "Race Car",
+        "path": "sounds/racecar.mp3",
+        "category": "Car, Araba"
+    },
+    {
+        "id": "141",
+        "name": "Fast Car 2",
+        "path": "sounds/fastcar2.mp3",
+        "category": "Car, Araba"
+    },
+    {
+        "id": "142",
+        "name": "Car Break",
+        "path": "sounds/car_break.mp3",
+        "category": "Car, Araba"
+    },
+    {
+        "id": "143",
+        "name": "Lion Roaring",
+        "path": "sounds/lionroar.mp3",
+        "category": "Animal, Hayvan"
+    },
+    {
+        "id": "144",
+        "name": "Awkward Silence",
+        "path": "sounds/awkward_silence.mp3",
+        "category": ""
+    },
+    {
+        "id": "145",
+        "name": "Sheep",
+        "path": "sounds/sheep.mp3",
+        "category": "Animal, Hayvan"
+    },
+    {
+        "id": "146",
+        "name": "Horse",
+        "path": "sounds/horse.mp3",
+        "category": "Animal, Hayvan"
+    },
+    {
+        "id": "147",
+        "name": "Jet Fighter",
+        "path": "sounds/jetfighter.mp3",
+        "category": ""
+    },
+    {
+        "id": "148",
+        "name": "Jet Fighter",
+        "path": "sounds/jetfighter.mp3",
+        "category": ""
     }
 ]
