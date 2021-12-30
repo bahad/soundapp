@@ -39,28 +39,17 @@ class _FavoritePageState extends State<FavoritePage>
     return Scaffold(
         backgroundColor: Colors.indigo,
         appBar: CustomAppBar(
-            title: Text(
-              'Favorites',
-              style: const TextStyle(
-                  fontSize: 18.0,
-                  fontFamily: 'OxygenBold',
-                  //fontWeight: FontWeight.w600,
-                  color: Colors.white),
-            ),
-            centerTitle: true,
-            automaticallyImplyLeading: false,
-            actions: [
-              IconButton(
-                icon: Icon(Icons.list),
-                onPressed: () {
-                  if (mounted) {
-                    setState(() {
-                      selection = !selection;
-                    });
-                  }
-                },
-              )
-            ]),
+          title: Text(
+            'Favorites',
+            style: const TextStyle(
+                fontSize: 18.0,
+                fontFamily: 'OxygenBold',
+                //fontWeight: FontWeight.w600,
+                color: Colors.white),
+          ),
+          centerTitle: true,
+          automaticallyImplyLeading: false,
+        ),
         body: Stack(
           children: [
             Container(
@@ -80,14 +69,17 @@ class _FavoritePageState extends State<FavoritePage>
                     : favProvider.favList.isEmpty
                         ? Center(
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
                                   Icons.folder,
                                   size: size.width * 0.20,
+                                  color: Colors.white,
                                 ),
                                 const SizedBox(height: 20),
                                 CustomText(
                                     sizes: Sizes.normal,
+                                    color: Colors.white,
                                     text: "You haven't added favorites yet!")
                               ],
                             ),

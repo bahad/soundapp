@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:soundapp/src/Components/customAppBar.dart';
 import 'package:soundapp/src/Components/effectListItem.dart';
 
@@ -21,8 +22,30 @@ class _HomePageState extends State<HomePage>
   bool autofocus = false;
   //FOR SCROLL
   final ScrollController _scrollController = ScrollController();
+  // GOOGLE ADS
+  late BannerAd bannerAd;
+  bool isAdLoaded = false;
+
+  initAd() {
+    bannerAd = BannerAd(
+        size: AdSize.banner,
+        adUnitId: "ca-app-pub-7482415086408641/6375713840",
+        listener: BannerAdListener(
+          onAdLoaded: (ad) => setState(() {
+            isAdLoaded = true;
+          }),
+          onAdFailedToLoad: (ad, error) {
+            ad.dispose();
+            print("Ads Error: ${error.message}");
+          },
+        ),
+        request: AdRequest());
+    bannerAd.load();
+  }
+
   @override
   void initState() {
+    initAd();
     getData();
     _scrollController.addListener(() {
       if (_scrollController.position.pixels ==
@@ -35,6 +58,7 @@ class _HomePageState extends State<HomePage>
   void dispose() {
     _scrollController.dispose();
     _searchQueryController.dispose();
+    bannerAd.dispose();
     super.dispose();
   }
 
@@ -92,6 +116,7 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: CustomAppBar(
           title: _isSearching
@@ -169,6 +194,20 @@ class _HomePageState extends State<HomePage>
                                     mainAxisSpacing: 16),
                             itemCount: _soundArray.length,
                             itemBuilder: (BuildContext ctx, index) {
+                              if (isAdLoaded && index == 10) {
+                                return ElevatedButton(
+                                    onPressed: () {},
+                                    child: Container(
+                                        height: bannerAd.size.height.toDouble(),
+                                        width: bannerAd.size.width.toDouble(),
+                                        child: AdWidget(ad: bannerAd)),
+                                    style: ButtonStyle(
+                                      shape: MaterialStateProperty.all(
+                                          RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(8))),
+                                    ));
+                              }
                               var a = _soundArray[index];
                               return EffectListItem(
                                 id: a['id'],
@@ -190,7 +229,7 @@ class _HomePageState extends State<HomePage>
         controller: _searchQueryController,
         autofocus: true,
         decoration: InputDecoration(
-          hintText: "Car, Animals, Politic ...",
+          hintText: "Cartoon, Animals, Politic ...",
           border: InputBorder.none,
           hintStyle: TextStyle(color: Colors.white),
         ),

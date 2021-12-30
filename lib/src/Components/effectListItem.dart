@@ -247,20 +247,36 @@ class _EffectListItemState extends State<EffectListItem>
 
   Widget backWidget(onDeleteIconPressed) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        flipAnimController.reverse();
+      },
       style: ButtonStyle(
           shape: MaterialStateProperty.all(
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
-          backgroundColor: MaterialStateProperty.all(Colors.black)),
+          backgroundColor:
+              MaterialStateProperty.all(widget.category!.contains('Gaming')
+                  ? gamingColor
+                  : widget.category!.contains('Küfür')
+                      ? kufurColor
+                      : widget.category!.contains('Politic')
+                          ? politicColor
+                          : widget.category!.contains('Anime')
+                              ? animeColor
+                              : widget.category!.contains('Cartoon')
+                                  ? cartoonColor
+                                  : unfilterColor)),
       child: Center(
-          child: IconButton(
-        iconSize: 40,
-        icon: Icon(Icons.delete_forever),
-        color: Colors.red,
-        onPressed: () {
-          onDeleteIconPressed();
-          flipAnimController.reverse();
-        },
+          child: RotatedBox(
+        quarterTurns: 2,
+        child: IconButton(
+          iconSize: 40,
+          icon: Icon(Icons.delete_forever),
+          color: Colors.white,
+          onPressed: () {
+            onDeleteIconPressed();
+            flipAnimController.reverse();
+          },
+        ),
       )),
     );
   }
