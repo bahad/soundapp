@@ -163,6 +163,7 @@ class _HomePageState extends State<HomePage>
                 child: _searchResult.length != 0 ||
                         _searchQueryController.text.isNotEmpty
                     ? GridView.builder(
+                        shrinkWrap: true,
                         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                             maxCrossAxisExtent: 200,
                             childAspectRatio: 13 / 12, // 3/2
@@ -185,6 +186,7 @@ class _HomePageState extends State<HomePage>
                         interactive: true,
                         radius: Radius.circular(15),
                         child: GridView.builder(
+                            shrinkWrap: true,
                             controller: _scrollController,
                             gridDelegate:
                                 SliverGridDelegateWithMaxCrossAxisExtent(
@@ -197,10 +199,7 @@ class _HomePageState extends State<HomePage>
                               if (isAdLoaded && index == 10) {
                                 return ElevatedButton(
                                     onPressed: () {},
-                                    child: Container(
-                                        height: bannerAd.size.height.toDouble(),
-                                        width: bannerAd.size.width.toDouble(),
-                                        child: AdWidget(ad: bannerAd)),
+                                    child: AdWidget(ad: bannerAd),
                                     style: ButtonStyle(
                                       shape: MaterialStateProperty.all(
                                           RoundedRectangleBorder(

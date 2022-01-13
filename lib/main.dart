@@ -11,6 +11,7 @@ void main() async {
   MobileAds.instance.initialize();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive,
       overlays: [SystemUiOverlay.top]);
+
   await FlutterDownloader.initialize(debug: false);
   runApp(MyApp());
 }

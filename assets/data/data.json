@@ -883,8 +883,230 @@
     },
     {
         "id": "148",
-        "name": "Jet Fighter",
-        "path": "sounds/jetfighter.mp3",
+        "name": "Laser Gun",
+        "path": "sounds/laser_gun.mp3",
+        "category": "Gun, Silah"
+    },
+    {
+        "id": "149",
+        "name": "Machine Gun",
+        "path": "sounds/machinegun.mp3",
+        "category": "Gun, Silah"
+    },
+    {
+        "id": "150",
+        "name": "Whisper",
+        "path": "sounds/scary_whisper.mp3",
         "category": ""
+    },
+    {
+        "id": "151",
+        "name": "Ninja Sword",
+        "path": "sounds/ninja_sword.mp3",
+        "category": ""
+    },
+    {
+        "id": "152",
+        "name": "Dark Souls",
+        "path": "sounds/dark_souls.mp3",
+        "category": ""
+    },
+    {
+        "id": "153",
+        "name": "Keyboard",
+        "path": "sounds/keyboard.mp3",
+        "category": ""
+    },
+    {
+        "id": "154",
+        "name": "Underwater",
+        "path": "sounds/underwater.mp3",
+        "category": ""
+    },
+    {
+        "id": "155",
+        "name": "Man Falling",
+        "path": "sounds/manfalling.mp3",
+        "category": ""
+    },
+    {
+        "id": "156",
+        "name": "Sipping Tea",
+        "path": "sounds/sippingtea.mp3",
+        "category": ""
+    },
+    {
+        "id": "157",
+        "name": "Scary Door",
+        "path": "sounds/scarydoor.mp3",
+        "category": ""
+    },
+    {
+        "id": "158",
+        "name": "Sword",
+        "path": "sounds/sword_attack.mp3",
+        "category": ""
+    },
+    {
+        "id": "159",
+        "name": "Yawning",
+        "path": "sounds/yawning.mp3",
+        "category": ""
+    },
+    {
+        "id": "160",
+        "name": "Zombie Groan",
+        "path": "sounds/zombie_groan.mp3",
+        "category": ""
+    },
+    {
+        "id": "161",
+        "name": "Horror Ambiance",
+        "path": "sounds/horror_ambiance.mp3",
+        "category": ""
+    },
+    {
+        "id": "162",
+        "name": "Ice Spell",
+        "path": "sounds/ice_spell.mp3",
+        "category": ""
+    },
+    {
+        "id": "163",
+        "name": "Body Hit",
+        "path": "sounds/body_hit.mp3",
+        "category": ""
+    },
+    {
+        "id": "164",
+        "name": "Electric",
+        "path": "sounds/electric.mp3",
+        "category": ""
+    },
+    {
+        "id": "165",
+        "name": "Wolf Howling",
+        "path": "sounds/wolf_howling.mp3",
+        "category": "Animal, Hayvan"
+    },
+    {
+        "id": "166",
+        "name": "Sniper Rifle",
+        "path": "sounds/sniper_rifle.mp3",
+        "category": "Gun, Silah"
+    },
+    {
+        "id": "167",
+        "name": "Lamborghini",
+        "path": "sounds/lamborghini.mp3",
+        "category": "Car, Araba"
+    },
+    {
+        "id": "168",
+        "name": "Weird Laugh",
+        "path": "sounds/weird_laugh.mp3",
+        "category": ""
+    },
+    {
+        "id": "169",
+        "name": "Sniper HeadShot",
+        "path": "sounds/sniper_headshot.mp3",
+        "category": "Gun, Silah"
+    },
+    {
+        "id": "170",
+        "name": "Crowd Laugh",
+        "path": "sounds/crowd_laugh.mp3",
+        "category": ""
+    },
+    {
+        "id": "171",
+        "name": "Crowd Laugh",
+        "path": "sounds/crowd_laugh.mp3",
+        "category": ""
+    },
+    {
+        "id": "172",
+        "name": "Crowd Panic",
+        "path": "sounds/crowd_panic.mp3",
+        "category": ""
+    },
+    {
+        "id": "173",
+        "name": "Failure",
+        "path": "sounds/failure.mp3",
+        "category": ""
+    },
+    {
+        "id": "174",
+        "name": "Flashback",
+        "path": "sounds/flashback.mp3",
+        "category": ""
+    },
+    {
+        "id": "175",
+        "name": "Applause",
+        "path": "sounds/applause.mp3",
+        "category": ""
+    },
+    {
+        "id": "176",
+        "name": "Drum",
+        "path": "sounds/drum.mp3",
+        "category": ""
+    },
+    {
+        "id": "177",
+        "name": "Censor Beep",
+        "path": "sounds/censor_beep.mp3",
+        "category": ""
+    },
+    {
+        "id": "178",
+        "name": "Lonely Wind",
+        "path": "sounds/lonely_wind.mp3",
+        "category": ""
+    },
+    {
+        "id": "179",
+        "name": "Lonely Wind",
+        "path": "sounds/lonely_wind.mp3",
+        "category": ""
+    },
+    {
+        "id": "180",
+        "name": "Crowd Suspense",
+        "path": "sounds/crowd_suspense.mp3",
+        "category": ""
+    },
+    {
+        "id": "181",
+        "name": "Baby laughing",
+        "path": "sounds/baby_laughing.mp3",
+        "category": ""
+    },
+    {
+        "id": "182",
+        "name": "Man Burping",
+        "path": "sounds/man_burping.mp3",
+        "category": ""
+    },
+    {
+        "id": "183",
+        "name": "Woman Crying",
+        "path": "sounds/woman_crying.mp3",
+        "category": ""
+    },
+    {
+        "id": "184",
+        "name": "Akasya Durağı",
+        "path": "sounds/akasya_duragi.mp3",
+        "category": "Türkçe, Movie"
+    },
+    {
+        "id": "185",
+        "name": "Akasya Durağı Sinan",
+        "path": "sounds/akasya_duragi_sinan.mp3",
+        "category": "Türkçe, Movie"
     }
 ]
