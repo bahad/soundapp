@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:soundapp/src/Components/constants.dart';
 import 'package:soundapp/src/Components/customAppBar.dart';
 import 'package:soundapp/src/Components/customText.dart';
 import 'package:soundapp/src/Components/effectListItem.dart';
@@ -15,20 +16,16 @@ class FavoritePage extends StatefulWidget {
 
 class _FavoritePageState extends State<FavoritePage>
     with SingleTickerProviderStateMixin {
-  late AnimationController _animationController;
   bool selection = false;
   @override
   void initState() {
     final favProvider = Provider.of<FavProvider>(context, listen: false);
     favProvider.getFav();
-    _animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 1));
     super.initState();
   }
 
   @override
   void dispose() {
-    _animationController.dispose();
     super.dispose();
   }
 
@@ -37,7 +34,7 @@ class _FavoritePageState extends State<FavoritePage>
     Size size = MediaQuery.of(context).size;
     final favProvider = Provider.of<FavProvider>(context);
     return Scaffold(
-        backgroundColor: Colors.indigo,
+        backgroundColor: scaffoldColor,
         appBar: CustomAppBar(
           title: Text(
             'Favorites',
@@ -52,7 +49,7 @@ class _FavoritePageState extends State<FavoritePage>
         ),
         body: Stack(
           children: [
-            Container(
+            /* Container(
               width: double.infinity,
               height: size.height,
               decoration: BoxDecoration(
@@ -61,7 +58,7 @@ class _FavoritePageState extends State<FavoritePage>
                       image: AssetImage(
                         'assets/images/bgimage.jpeg',
                       ))),
-            ),
+            ), */
             Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: favProvider.favList == null
@@ -71,11 +68,15 @@ class _FavoritePageState extends State<FavoritePage>
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(
+                                Image.asset(
+                                  'assets/images/folder.png',
+                                  height: 100,
+                                ),
+                                /*  Icon(
                                   Icons.folder,
                                   size: size.width * 0.20,
                                   color: Colors.white,
-                                ),
+                                ), */
                                 const SizedBox(height: 20),
                                 CustomText(
                                     sizes: Sizes.normal,

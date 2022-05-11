@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soundapp/src/Components/constants.dart';
 import 'package:soundapp/src/Screens/favoritepage.dart';
 import 'package:soundapp/src/Screens/homepage.dart';
 
@@ -21,10 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         key: _scaffoldKey,
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.black.withOpacity(0.8),
-          selectedItemColor: Colors.amberAccent,
+          backgroundColor: bottomNavColor,
+          selectedItemColor: navBarItemColor,
           selectedIconTheme:
-              const IconThemeData(color: Colors.amberAccent, size: 27),
+              const IconThemeData(color: navBarItemColor, size: 27),
           unselectedIconTheme:
               const IconThemeData(color: Colors.white, size: 24),
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
@@ -39,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.music_note),
               label: 'Home',
             ),
             BottomNavigationBarItem(

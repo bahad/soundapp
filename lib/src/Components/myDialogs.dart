@@ -1,5 +1,6 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:soundapp/src/Components/customText.dart';
 import 'package:soundapp/src/Providers/favProvider.dart';
 
@@ -51,7 +52,15 @@ class MyDialog {
         context: context,
         builder: (BuildContext context) {
           return Transform.scale(
-              scale: size.width < 500 ? 1.0 : 1.5, child: cupertinoAlertDialog);
+              scale: size.width < 500 ? 1.0 : 1.5,
+              child: Theme(
+                data: ThemeData.from(
+                    colorScheme: ColorScheme.fromSwatch(
+                  brightness: Brightness.dark,
+                  primarySwatch: Colors.pink,
+                )),
+                child: cupertinoAlertDialog,
+              ));
         });
   }
 }

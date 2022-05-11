@@ -1027,9 +1027,9 @@
     },
     {
         "id": "172",
-        "name": "Crowd Panic",
-        "path": "sounds/crowd_panic.mp3",
-        "category": ""
+        "name": "Hey Hey",
+        "path": "sounds/heyhey.mp3",
+        "category": "Anime"
     },
     {
         "id": "173",
@@ -1069,9 +1069,9 @@
     },
     {
         "id": "179",
-        "name": "Lonely Wind",
-        "path": "sounds/lonely_wind.mp3",
-        "category": ""
+        "name": "Anime Scary",
+        "path": "sounds/anime_scary.mp3",
+        "category": "Anime"
     },
     {
         "id": "180",
@@ -1108,5 +1108,84 @@
         "name": "Akasya Durağı Sinan",
         "path": "sounds/akasya_duragi_sinan.mp3",
         "category": "Türkçe, Movie"
+    },
+    {
+        "id": "186",
+        "name": "Magic Sparkle",
+        "path": "sounds/magic_sparkle.mp3",
+        "category": "Anime"
+    },
+    {
+        "id": "187",
+        "name": "Spook",
+        "path": "sounds/spook.mp3",
+        "category": "Anime"
+    },
+    {
+        "id": "188",
+        "name": "Anime Punch",
+        "path": "sounds/anime_punch.mp3",
+        "category": "Anime"
+    },
+    {
+        "id": "189",
+        "name": "Happy Birthday",
+        "path": "sounds/happy_birthday.mp3",
+        "category": ""
+    },
+    {
+        "id": "190",
+        "name": "Keloglan",
+        "path": "sounds/keloglan.mp3",
+        "category": "Movie, Türkçe"
+    },
+    {
+        "id": "191",
+        "name": "Harmanim",
+        "path": "sounds/harmanim.mp3",
+        "category": "Türkçe"
+    },
+    {
+        "id": "192",
+        "name": "Çilekli Lolipop",
+        "path": "sounds/cilekli_lolipop.mp3",
+        "category": "Türkçe"
+    },
+    {
+        "id": "193",
+        "name": "Sek sek",
+        "path": "sounds/seksek.mp3",
+        "category": ""
+    },
+    {
+        "id": "194",
+        "name": "Quack",
+        "path": "sounds/quack.mp3",
+        "category": "Cartoon"
+    },
+    {
+        "id": "195",
+        "name": "Chicken",
+        "path": "sounds/quack.mp3",
+        "category": ""
+    },
+    {
+        "id": "196",
+        "name": "Cant See",
+        "path": "sounds/cant_see.mp3",
+        "category": ""
+    },
+    {
+        "id": "197",
+        "name": "Watch Out",
+        "path": "sounds/watch_out.mp3",
+        "category": ""
+    },
+    {
+        "id": "198",
+        "name": "Vietnam WM",
+        "path": "sounds/vietnam_war_music.mp3",
+        "category": ""
     }
+    
 ]

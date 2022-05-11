@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soundapp/src/Components/constants.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? title;
@@ -18,7 +19,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return PreferredSize(
       preferredSize: preferredSize,
       child: AppBar(
-          backgroundColor: Colors.black.withOpacity(0.8), //Color(0xFFFF416C),
+          backgroundColor: bottomNavColor,
           iconTheme: IconThemeData(color: Colors.white),
           actionsIconTheme: IconThemeData(color: Colors.white),
           centerTitle: centerTitle,

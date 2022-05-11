@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:soundapp/src/Components/constants.dart';
 import 'package:soundapp/src/Components/customAppBar.dart';
 import 'package:soundapp/src/Components/effectListItem.dart';
 
@@ -45,8 +46,8 @@ class _HomePageState extends State<HomePage>
 
   @override
   void initState() {
-    initAd();
     getData();
+    initAd();
     _scrollController.addListener(() {
       if (_scrollController.position.pixels ==
           _scrollController.position.maxScrollExtent) {}
@@ -59,19 +60,20 @@ class _HomePageState extends State<HomePage>
     _scrollController.dispose();
     _searchQueryController.dispose();
     bannerAd.dispose();
+
     super.dispose();
   }
 
-  getData() {
+  Future getData() async {
     future = DefaultAssetBundle.of(context)
         .loadString('assets/data/data.json')
         .then((value) {
-      if (value != 0 && mounted) {
+      if (mounted) {
         setState(() {
           _soundArray = [];
           _soundArray = jsonDecode(value);
-          _soundArray.shuffle();
         });
+        _soundArray.shuffle();
       }
     });
   }
@@ -118,6 +120,7 @@ class _HomePageState extends State<HomePage>
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
+      backgroundColor: scaffoldColor,
       appBar: CustomAppBar(
           title: _isSearching
               ? _buildSearchField(context)
@@ -147,16 +150,6 @@ class _HomePageState extends State<HomePage>
           actions: _buildActions()),
       body: Stack(
         children: [
-          Container(
-            width: double.infinity,
-            height: size.height,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(
-                      'assets/images/bgimage.jpeg',
-                    ))),
-          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Container(
@@ -191,7 +184,7 @@ class _HomePageState extends State<HomePage>
                             gridDelegate:
                                 SliverGridDelegateWithMaxCrossAxisExtent(
                                     maxCrossAxisExtent: 200,
-                                    childAspectRatio: 13 / 12, // 3/2
+                                    childAspectRatio: 1 / 1,
                                     crossAxisSpacing: 16,
                                     mainAxisSpacing: 16),
                             itemCount: _soundArray.length,
@@ -202,9 +195,7 @@ class _HomePageState extends State<HomePage>
                                     child: AdWidget(ad: bannerAd),
                                     style: ButtonStyle(
                                       shape: MaterialStateProperty.all(
-                                          RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(8))),
+                                          CircleBorder()),
                                     ));
                               }
                               var a = _soundArray[index];

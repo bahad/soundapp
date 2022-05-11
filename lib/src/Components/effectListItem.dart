@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
@@ -119,20 +118,9 @@ class _EffectListItemState extends State<EffectListItem>
           }
         },
         style: ButtonStyle(
-            shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
-            backgroundColor:
-                MaterialStateProperty.all(widget.category!.contains('Gaming')
-                    ? gamingColor
-                    : widget.category!.contains('Küfür')
-                        ? kufurColor
-                        : widget.category!.contains('Politic')
-                            ? politicColor
-                            : widget.category!.contains('Anime')
-                                ? animeColor
-                                : widget.category!.contains('Cartoon')
-                                    ? cartoonColor
-                                    : unfilterColor)),
+            elevation: MaterialStateProperty.all(5),
+            shape: MaterialStateProperty.all(CircleBorder()),
+            backgroundColor: MaterialStateProperty.all(navBarItemColor)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -168,10 +156,7 @@ class _EffectListItemState extends State<EffectListItem>
                     tooltip: 'Add Favorite',
                     iconSize: 28,
                     icon: _fav
-                        ? Icon(
-                            Icons.favorite,
-                            color: CupertinoColors.destructiveRed,
-                          )
+                        ? Icon(Icons.favorite, color: scaffoldColor)
                         : Icon(Icons.favorite_outline),
                     onPressed: () {
                       if (_fav) {
@@ -251,20 +236,8 @@ class _EffectListItemState extends State<EffectListItem>
         flipAnimController.reverse();
       },
       style: ButtonStyle(
-          shape: MaterialStateProperty.all(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
-          backgroundColor:
-              MaterialStateProperty.all(widget.category!.contains('Gaming')
-                  ? gamingColor
-                  : widget.category!.contains('Küfür')
-                      ? kufurColor
-                      : widget.category!.contains('Politic')
-                          ? politicColor
-                          : widget.category!.contains('Anime')
-                              ? animeColor
-                              : widget.category!.contains('Cartoon')
-                                  ? cartoonColor
-                                  : unfilterColor)),
+          shape: MaterialStateProperty.all(CircleBorder()),
+          backgroundColor: MaterialStateProperty.all(navBarItemColor)),
       child: Center(
           child: RotatedBox(
         quarterTurns: 2,
